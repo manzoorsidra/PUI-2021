@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter';
+}
+
+nav{
+	background-color: #BEDEB6;
+	width: 100%;
+	height: 67.5px;
+	padding-top: 42.5px;
+	padding-left: 110px;
+	padding-right: 110px;
+}
+
+#navtitles{
+	position: relative;
+	display: inline-block;
+}
+
+nav a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+	padding-left: 60px;
+}
+
+#logo{
+	display: inline-block;
+}
+
+#logo img{
+	vertical-align: middle;
+}
+
+
+.iconlabels img{
+	padding-left: 8px;
+	vertical-align: middle;
+
+}
+
+img + span{
+	margin-left: 8px;
+}
+
