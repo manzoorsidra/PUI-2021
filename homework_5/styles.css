@@ -123,6 +123,14 @@ button{
 	line-height: 29.05px;
 }
 
+.primarybutton{
+	background-color: #FF6770;
+	padding: 14px 28px;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 29.05px;
+}
+
 .sidebysidecontent{
 	display: flex;
 	justify-content: space-between;
@@ -220,7 +228,7 @@ footer{
 	justify-content: space-between;
 }
 
-footer a, p{
+footer a, footer p{
 	font-size: 14px;
 	line-height: 17px;
 	text-decoration: none;
@@ -260,7 +268,6 @@ justify-content: space-between;
 .row{
 	display: flex;
 	justify-content: space-between;
-	/* width: 1220px; */
 }
 
 #row1{
@@ -269,12 +276,7 @@ justify-content: space-between;
 
 .flavorlisting{
 	display: inline-block;
-	/* background-color: red; */
 }
-
-/* .flavorlisting + .flavorlisting{
-	margin-left: 40px;
-} */
 
 .flavorimage{
 	border-radius: 16px;
@@ -310,6 +312,148 @@ justify-content: space-between;
 	display: flex;
 	justify-content: space-between;
 	width: 140px;
+}
+
+/* Detail Page */
+#detailpage{
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftside{
+	width: 485px;
+}
+
+.rightside{
+	width: 690px;
+}
+
+#back{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 282px;
+	margin-bottom: 30px;
+}
+
+#back p{
+	font-size: 30px;
+	line-height: 36px;
+}
+
+#rollimage{
+	margin-bottom: 20px;
+}
+
+.carouselindicators{
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#ingredients, #containsingredients{
+	font-weight: 400;
+}
+
+#ingredients{
+	margin-bottom: 20px;
+}
+
+#contains{
+	margin-bottom: 8px;
+}
+
+.leftside h5{
+	margin-bottom: 8px;
+}
+
+.detailtitle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	margin-top: 66px;
+}
+
+.detailratings{
+	display: flex;
+	justify-content: space-between;
+	width: 351px;
+	margin-bottom: 20px;
+}
+
+.detailstars{
+	display: flex;
+	justify-content: space-between;
+	width: 190px;
+}
+
+.detailstars img{
+	width: 30px;
+}
+
+#details{
+	margin-bottom: 40px;
+}
+
+.glaze p{
+	margin-bottom: 15px;
+}
+
+.alloptions{
+	display: block;
+}
+
+.goptionrow{
+	display: flex;
+	justify-content: space-between;
+	width: 640px;
+}
+
+.qoptionrow{
+	display: flex;
+	justify-content: space-between;
+	width: 364px;
+}
+
+#goptionrow1{
+	margin-bottom: 20px;
+}
+
+.options{
+	border-radius: 5px;
+	border: 0.8px dashed black;
+	color: #000000;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.qoptions{
+	width: 76px;
+}
+
+.goptions{
+	width: 200px;
+}
+
+.glaze{
+	margin-bottom: 40px;
+}
+
+.quantity{
+	margin-bottom: 60px;
+}
+
+.quantity p{
+	margin-bottom: 15px;
+}
+
+#addtocart{
+	width: 260px;
 }
 
 
