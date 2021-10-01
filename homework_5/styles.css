@@ -44,3 +44,20 @@ img + span{
 	margin-left: 8px;
 }
 
+#flavoroftheweek{
+	background-color: #FFFBEE;
+	margin: 0px 110px 0px 110px;
+	border-radius: 20px;
+	padding: 60px 50px;
+}
+
+#flavoroftheweek button{
+	padding: 14px 28px;
+	border-color: #FF6770;
+	background-color: transparent;
+	border-radius: 4px;
+	text-shadow: none;
+	color: #FF6770;
+	font-size: 24px;
+}
+
