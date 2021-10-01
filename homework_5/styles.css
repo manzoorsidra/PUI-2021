@@ -110,13 +110,9 @@ button{
 
 /* Homepagesections */
 .homepagesection{
-	margin: 0px 110px 0px 110px;
+	margin: 0px 110px 80px 110px;
 	border-radius: 20px;
 	padding: 60px 50px;
-}
-
-.homepagesection + .homepagesection{
-	margin: 80px;
 }
 
 .secondarybutton{
@@ -130,6 +126,7 @@ button{
 .sidebysidecontent{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .sidebysidecontent h4{
@@ -137,15 +134,24 @@ button{
 	font-weight: 500;
 }
 
-.sidebysidecontent p{
+/* .sidebysidecontent p{
 	margin-bottom: 40px;
-}
+} */
 
 .sidebysidecontent img{
 	width: 540px;
 	height: auto;
 }
 
+.sidebysidetext{
+	width: 550px;
+	display:inline-block;
+}
+
+.sidebysidetext p + p{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
 
 /*Flavor of the Week Section */
 #flavoroftheweek{
@@ -158,12 +164,6 @@ button{
 	font-weight: 600;
 }
 
-
-#flavortext{
-	width: 550px;
-	display:inline-block;
-}
-
 #tag {
 	padding: 12px 24px;
 	background-color: #FFB176;
@@ -173,6 +173,10 @@ button{
 	font-size: 24px;
 	line-height: 30px;
 	margin-bottom: 10px;
+}
+
+#flavoroftheweek p{
+	margin-bottom: 40px;
 }
 
 /*Follow Us Section */
@@ -199,6 +203,49 @@ button{
 /*Citywide Delivery Section */
 #citywidedelivery{
 	background-color: #FFFBEE;
+}
+
+/*Our Shop Section */
+#ourshop{
+	background-color: #E5F2E2;
+}
+
+/* Footer */
+footer{
+	background-color: #BEDEB6;
+	/* height: 50px; */
+	padding: 30px 110px 30px 110px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a, p{
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration: none;
+	color: #000000;
+}
+
+#footerleft{
+display: flex;
+width: 146.5px;
+justify-content: space-between;
+
+}
+
+#footerright{
+	display: flex;
+	width: 493px;
+	justify-content: space-between;
+}
+
+#footersocials img{
+	width: 20px;
+}
+
+#footersocials img + img{
+	margin-left: 15px;
 }
 
 
