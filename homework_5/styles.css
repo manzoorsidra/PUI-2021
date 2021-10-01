@@ -4,13 +4,53 @@
 	font-family: 'Inter';
 }
 
+
+h1{
+	font-size: 80px;
+	line-height: 90px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 60px;
+	line-height: 72.61px;
+}
+
+h3{
+	font-size: 50px;
+	line-height: 60.51px;
+}
+
+h4{
+	font-size: 40px;
+	line-height: 48.41px;
+}
+
+h5{
+	font-size: 26px;
+	line-height: 31.47px;
+}
+
+h6{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+p{
+	font-size: 24px;
+	line-height: 30px;	
+}
+
+
+/* Navigation Bar */
 nav{
 	background-color: #BEDEB6;
-	width: 100%;
-	height: 67.5px;
-	padding-top: 42.5px;
-	padding-left: 110px;
-	padding-right: 110px;
+	height: 50px;
+	padding: 30px 110px 30px 110px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
 }
 
 #navtitles{
@@ -18,46 +58,150 @@ nav{
 	display: inline-block;
 }
 
-nav a{
-	font-size: 20px;
-	text-decoration: none;
-	color: #000000;
-	padding-left: 60px;
-}
-
 #logo{
 	display: inline-block;
 }
 
-#logo img{
-	vertical-align: middle;
+#navtitles a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+#navtitles a + a{
+	padding-left: 60px;
 }
 
 
 .iconlabels img{
 	padding-left: 8px;
 	vertical-align: middle;
-
 }
 
-img + span{
-	margin-left: 8px;
+/* Banner*/
+#banner{
+	background-image: url('images/headerimage.png');
+	padding: 110px 0px 90px 110px;
+	margin-bottom: 100px;
 }
 
-#flavoroftheweek{
-	background-color: #FFFBEE;
+#banner p{
+	font-size: 40px;
+	line-height: 48.41px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: #504f4f;	
+}
+
+button{
+	background: transparent;
+	border-style: solid;
+	border-radius: 4px;
+	border-color: #FF6770;
+}
+
+#banner button{
+	padding: 17px 63.5px;
+	background-color: #FF6770;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 29.05px;
+}
+
+/* Homepagesections */
+.homepagesection{
 	margin: 0px 110px 0px 110px;
 	border-radius: 20px;
 	padding: 60px 50px;
 }
 
-#flavoroftheweek button{
-	padding: 14px 28px;
-	border-color: #FF6770;
+.homepagesection + .homepagesection{
+	margin: 80px;
+}
+
+.secondarybutton{
 	background-color: transparent;
-	border-radius: 4px;
-	text-shadow: none;
+	padding: 14px 28px;
 	color: #FF6770;
 	font-size: 24px;
+	line-height: 29.05px;
 }
+
+.sidebysidecontent{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebysidecontent h4{
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.sidebysidecontent p{
+	margin-bottom: 40px;
+}
+
+.sidebysidecontent img{
+	width: 540px;
+	height: auto;
+}
+
+
+/*Flavor of the Week Section */
+#flavoroftheweek{
+	background-color: #FFFBEE;
+}
+
+#flavoroftheweek h3{
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+#flavortext{
+	width: 550px;
+	display:inline-block;
+}
+
+#tag {
+	padding: 12px 24px;
+	background-color: #FFB176;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+/*Follow Us Section */
+#followus{
+	background-color: #FFEFF0;
+	text-align: center;
+}
+
+#followus h3{
+	margin-bottom: 20px;
+}
+
+#followus p{
+	margin-bottom: 40px;
+	padding: 0px 250px;
+}
+
+#socials{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 400px;
+}
+
+/*Citywide Delivery Section */
+#citywidedelivery{
+	background-color: #FFFBEE;
+}
+
+
+
+
 
