@@ -278,6 +278,7 @@ justify-content: space-between;
 	display: inline-block;
 }
 
+
 .flavorimage{
 	border-radius: 16px;
 	position: relative;
@@ -286,6 +287,8 @@ justify-content: space-between;
 }
 
 .addbutton{
+	width: 70px;
+	height: 70px;
 	position: absolute;
 	right: 0px;
 }
@@ -306,6 +309,7 @@ justify-content: space-between;
 
 .ratings h6{
 	margin-left: 15px;
+	font-weight: 500;
 }
 
 .stars{
@@ -315,9 +319,10 @@ justify-content: space-between;
 }
 
 /* Detail Page */
-#detailpage{
+.topsection{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 100px;
 }
 
 .leftside{
@@ -328,17 +333,27 @@ justify-content: space-between;
 	width: 690px;
 }
 
-#back{
+/* #back{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 282px;
 	margin-bottom: 30px;
-}
+	background-color: red;
+} */
 
 #back p{
 	font-size: 30px;
 	line-height: 36px;
+}
+
+#back a{
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+	justify-content: space-between;
+	width: 282px;
+	margin-bottom: 30px;
 }
 
 #rollimage{
@@ -346,9 +361,10 @@ justify-content: space-between;
 }
 
 .carouselindicators{
-	display: block;
-	text-align: center;
-	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	margin: 0px 192.5px 30px 192.5px;
 }
 
 #ingredients, #containsingredients{
@@ -440,6 +456,14 @@ justify-content: space-between;
 	width: 200px;
 }
 
+.defaultoption{
+	border: none;
+	font-weight: 600;
+	background-color: #BEDEB6;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+
 .glaze{
 	margin-bottom: 40px;
 }
@@ -455,6 +479,12 @@ justify-content: space-between;
 #addtocart{
 	width: 260px;
 }
+
+#bottomsection h4{
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+
 
 
 

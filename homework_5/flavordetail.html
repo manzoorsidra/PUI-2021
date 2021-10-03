@@ -8,7 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
-<!---Navigation Bar--->
+    <!---Navigation Bar--->
 	<header>
 		<nav>
 			<div id="logo">
@@ -25,95 +25,149 @@
 		</nav>
 	</header>
 
-    <div class="pagecontent" id="detailpage">
-    <!-- Left Column -->
-        <div class = "leftside">
-            <div id="back">
-                <img src="images/backarrow.svg" alt="back arrow">
-                <p>Back to Browse</p>
-            </div>
+    <div class="pagecontent">
+        <div class="topsection">
+            <!-- Left Column -->
+            <div class = "leftside">
+                <div id="back">
+                    <a href="browseflavors.html"><img src="images/backarrow.svg" alt="back arrow">
+                    <p>Back to Browse</p></a>
+                </div>
 
-            <img id="rollimage" src="images/originaldetail.png" alt="original cinnamon roll">
-            <div class="carouselindicators">
-                <img src="images/selecteddot.svg">
-                <img src="images/notselecteddot.svg">
-                <img src="images/notselecteddot.svg">
+                <img id="rollimage" src="images/originaldetail.png" alt="original cinnamon roll">
+                <div class="carouselindicators">
+                    <img src="images/selecteddot.svg">
+                    <img src="images/notselecteddot.svg">
+                    <img src="images/notselecteddot.svg">
+                </div>
+                <h5>Ingredients</h5>
+                <h6 id="ingredients">Enriched wheat flour, Sugar, cocoa butter, soy lecithin, vanilla salt, brown sugar, margarine, vegetable oil, soybean, water, salt, dry milk, monoglycerides, natural flavoring, vitamin A,beta carotene color, butter, eggs, soy flour, baking soda, natural vanilla flavor.</h6>
+                <h6 id="contains">This Product Contains</h6>
+                <h6 id="containsingredients">Egg, Milk, Soy and Wheat</h6>
             </div>
-            <h5>Ingredients</h5>
-            <h6 id="ingredients">Enriched wheat flour, Sugar, cocoa butter, soy lecithin, vanilla salt, brown sugar, margarine, vegetable oil, soybean, water, salt, dry milk, monoglycerides, natural flavoring, vitamin A,beta carotene color, butter, eggs, soy flour, baking soda, natural vanilla flavor.</h6>
-            <h6 id="contains">This Product Contains</h6>
-            <h6 id="containsingredients">Egg, Milk, Soy and Wheat</h6>
-        </div>
-    <!-- Right Column -->
-        <div class="rightside">
-            <div class="detailtitle">
-                <h2>Original</h2>
-                <h4>$ 1.99</h4>
-            </div>
-            <div class="detailratings">
-                    <div class="detailstars">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/stargrey.svg" alt="rating star">
-                    </div>
-                    <p>1219 Ratings</p>
-            </div>
-            <p id="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur id congue enim in id eget ut. Egestas ridiculus at ac mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur id congue enim in id eget ut. Egestas ridiculus at ac mauris.</p>
-            <div class="glaze">
-                <p>Glaze</p>
-                <div class="alloptions">
-                    <div class="goptionrow" id="goptionrow1">
-                        <div class="goptions options">No Glaze</div>
-                        <div class="goptions options">Sugar - Milk</div>
-                        <div class="goptions options">Double - Chocolate</div>
-                    </div>
-                    <div class="optionrow">
-                        <div class="goptions options">Vanilla - Milk</div>
+            <!-- Right Column -->
+            <div class="rightside">
+                <div class="detailtitle">
+                    <h2>Original</h2>
+                    <h4>$ 1.99</h4>
+                </div>
+                <div class="detailratings">
+                        <div class="detailstars">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/stargrey.svg" alt="rating star">
+                        </div>
+                        <p>1219 Ratings</p>
+                </div>
+                <p id="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur id congue enim in id eget ut. Egestas ridiculus at ac mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur id congue enim in id eget ut. Egestas ridiculus at ac mauris.</p>
+                <div class="glaze">
+                    <p>Glaze</p>
+                    <div class="alloptions">
+                        <div class="goptionrow" id="goptionrow1">
+                            <div class="goptions options defaultoption">No Glaze</div>
+                            <div class="goptions options">Sugar - Milk</div>
+                            <div class="goptions options">Double - Chocolate</div>
+                        </div>
+                        <div class="optionrow">
+                            <div class="goptions options">Vanilla - Milk</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quantity">
-                <p>Quantity</p>
-                <div class="alloptions qoptionrow">
-                    <div class="qoptions options">1</div>
-                    <div class="qoptions options">3</div>
-                    <div class="qoptions options">6</div>
-                    <div class="qoptions options">12</div>
+                <div class="quantity">
+                    <p>Quantity</p>
+                    <div class="alloptions qoptionrow">
+                        <div class="qoptions options defaultoption">1</div>
+                        <div class="qoptions options">3</div>
+                        <div class="qoptions options">6</div>
+                        <div class="qoptions options">12</div>
+                    </div>
                 </div>
+                <button class="primarybutton" id="addtocart">Add to Cart</button>
             </div>
-            <button class="primarybutton" id="addtocart">Add to Cart</button>
         </div>
-     <!-- Bottom Section -->
-        <!-- <div id="youmayalsolike">
+        <!-- Bottom Section -->
+        <div id="bottomsection">
             <h4>You May Also Like</h4>
-            <div class="flavorlisting">
-                <div class="flavorimage">
-                    <a class="flavor" href="flavordetail.html"><img src="images/original.png" alt="original cinnamon roll"></a>
-                    <a class="addbutton" href="#"><img src="images/add.svg" alt="Add button"></a>
-                </div>
-                <div class="flavortitle">
-                    <h5>Original</h5>
-                    <h5>$ 1.99</h5>
-                </div>
-                <div class="ratings">
-                    <div class="stars">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/starpink.svg" alt="rating star">
-                        <img src="images/stargrey.svg" alt="rating star">
+            <div class="row">
+                <!-- pumpkin spice -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html"><img src="images/pumpkinspice.png" alt="pumpkin spice cinnamon roll"></a>
                     </div>
-                    <h6>1219 Ratings</h6>
+                    <div class="flavortitle">
+                        <h5>Pumpkin Spice</h5>
+                        <h5>$ 2.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/stargrey.svg" alt="rating star">
+                        </div>
+                        <h6>219 Ratings</h6>
+                    </div>
+                </div>
+                <!-- caramel pecan -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html"><img src="images/caramelpecan.png" alt="caramel pecan cinnamon roll"></a>
+                    </div>
+                    <div class="flavortitle">
+                        <h5>Caramel Pecan</h5>
+                        <h5>$ 2.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                        </div>
+                        <h6>283 Ratings</h6>
+                    </div>
+                </div>
+                <!-- Blackberry -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html"><img src="images/blackberry.png" alt="blackberry cinnamon roll"></a>
+                    </div>
+                    <div class="flavortitle">
+                        <h5>Blackberry</h5>
+                        <h5>$ 1.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/starpink.svg" alt="rating star">
+                            <img src="images/stargrey.svg" alt="rating star">
+                            <img src="images/stargrey.svg" alt="rating star">
+                        </div>
+                        <h6>198 Ratings</h6>
+                    </div>
                 </div>
             </div>
-
-            </div> -->
-
         </div>
-    <!-- </div> -->
-
-    
+    </div>  
+    <!---Footer--->
+    <footer>
+        <a href="#" id="footerleft"><img src="images/copyright.svg" alt="copyright icon"><p>Bun Bun Bakeshop</p></a>
+        <div id="footerright">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <div id="footersocials">
+                <img src="images/facebook.svg" alt="Facebook logo">
+                <img src="images/instagram.svg" alt="Instagram logo">
+                <img src="images/snapchat.svg" alt="Snapchat logo">
+                <img src="images/twitter.svg" alt="Twitter logo">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
