@@ -125,6 +125,7 @@ justify-content: space-between;
 /* Banner*/
 #banner{
 	background-image: url('images/headerimage.png');
+	/* width: 100%; */
 	padding: 110px 0px 90px 110px;
 	margin-bottom: 100px;
 }
@@ -239,6 +240,7 @@ justify-content: space-between;
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 400px;
+	/* width: 355px; */
 }
 
 /*Citywide Delivery Section */
