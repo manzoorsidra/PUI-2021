@@ -1,16 +1,37 @@
+document.getElementById("addToCartBtn").addEventListener("click", function() {
+    for(var i=1;i<6;i++) {
+        document.getElementsByClassName(i+'_p').style.backgroundColor = '#BEDEB6';
+      }
+  });
 
 
-console.log('options');
 
-var selectedOptions = document.getElementsByClassName('options');
-for (var i = 0; i < selectedOptions.length; i++) {
-    var option = selectedOptions[i];
-    option.addEventListener('click', function(){
-        console.log('works');
-    });
+function addToCart() { 
+    if(document.getElementById('noGlaze').checked) {
+        document.getElementById("disp").innerHTML
+            = document.getElementById("noGlaze").value
+            + " radio button checked";
+    }
+    else if(document.getElementById('vanillaMilk').checked) {
+        document.getElementById("disp").innerHTML
+            = document.getElementById("vanillaMilk").value
+            + " radio button checked";  
+    }
+    else if(document.getElementById('sugarMilk').checked) {
+        document.getElementById("disp").innerHTML
+            = document.getElementById("sugarMilk").value
+            + " radio button checked";  
+    }
+    else if(document.getElementById('doubleChocolate').checked) {
+        document.getElementById("disp").innerHTML
+            = document.getElementById("doubleChocolate").value
+            + " radio button checked";  
+    }
+    else {
+        document.getElementById("disp").innerHTML
+            = "No one selected";
+    }
 }
-
-
 
 
 

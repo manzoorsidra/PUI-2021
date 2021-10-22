@@ -494,6 +494,30 @@ justify-content: space-between;
 }
 
 
+input[type="radio"]{
+	opacity: 0;
+	width: 0;
+	margin: 0;
+  }
+
+input[type="radio"]:checked+label {
+	background-color: #BEDEB6;
+  }
+  
+label[for="noGlaze"], label[for="vanillaMilk"], label[for="sugarMilk"], label[for="doubleChocolate"]{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	height: 57px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 0.8px dashed black;
+	gap: 20px;
+}
+
+
+
 
 
 
