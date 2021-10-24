@@ -1,33 +1,67 @@
 //Capture selected values of radio group and add to "items" array
+var myId;
 var items = [];
-const cartBtn = document.querySelector('addToCartBtn');
-addToCartBtn.onclick = function () {
-    const rbs = document.querySelectorAll('input[name="glaze_flavor"]');
-    const rbs2 = document.querySelectorAll('input[name="quantity"]');
 
-    let selectedValue1;
-    let selectedValue2;
+var cartBtnAvailable = document.getElementById('addToCartBtn');
+if(cartBtnAvailable){
+  cartBtnAvailable.addEventListener('click', function(){
+//     const rbs = document.querySelectorAll('input[name="glaze_flavor"]');
+//     const rbs2 = document.querySelectorAll('input[name="quantity"]');
 
-    for (const rb of rbs) {
-        if (rb.checked) {
-            selectedValue1 = rb.value;
-        }
-    }
+//     let selectedValue1;
+//     let selectedValue2;
 
-    for (const rb2 of rbs2) {
-      if (rb2.checked) {
-          selectedValue2 = rb2.value;
-      }
-  }
-    var item = [selectedValue1, selectedValue2];
-    items.push(item);
-    console.log(items);
+//     for (const rb of rbs) {
+//         if (rb.checked) {
+//             selectedValue1 = rb.value;
+//         }
+//     }
 
-//counter for the shopping cart
-    for (var i = 0; i <= items.length; i++){
-      document.getElementById("disp").innerHTML = i;
-    }
+//     for (const rb2 of rbs2) {
+//       if (rb2.checked) {
+//           selectedValue2 = rb2.value;
+//       }
+//   }
+//     var item = [selectedValue1, selectedValue2];
+//     items.push(item);
+//     console.log(items);
+
+
+// Local Storage Cart Items Counter
+    currentCounterValue = parseInt(localStorage.getItem('cartItemNumber'));
+
+    if (isNaN(currentCounterValue)){
+        currentCounterValue = 0;
+        localStorage.setItem("cartItemNumber", JSON.stringify(currentCounterValue));
+    };
+
+    var updatedCounter = currentCounterValue + 1;
+    localStorage.setItem("cartItemNumber", JSON.stringify(updatedCounter));
+
+    console.log(typeof(localStorage.getItem('cartItemNumber')) + localStorage.getItem('cartItemNumber'));
+
+    
+  });
 };
+
+
+
+function updateCartOnAllPages(){
+
+    if(document.getElementById("disp")){
+        document.getElementById("disp").innerHTML = JSON.parse(localStorage.getItem('cartItemNumber'));
+    }
+
+    var cartCount = JSON.parse(localStorage.getItem('cartItemNumber'));
+    console.log("cartCount = " + cartCount);
+
+    var cartItemNumber = document.getElementsByClassName("dispClass");
+    console.log(cartItemNumber);
+
+    cartItemNumber.innerHTML = cartCount;
+    console.log(cartItemNumber.innerHTML);
+};
+
 
 
 //Based on which option is selected change image
@@ -91,21 +125,19 @@ document.body.addEventListener('change', function(e){
 
 
 
-// function addCinnamonRoll(){
-//     var rolls = [];
-//     if(localStorage.getItem('rolls')){
-//         rolls = JSON.parse(localStorage.getItem('rolls'));
-//     }
-//     rolls.push({'Flavor' : 'glaze' : quantity });
-//     localStorage.setItem('products', JSON.stringify(products));
 
-// }
 
-// function addProduct(){
-//     let products = [];
-//     if(localStorage.getItem('products')){
-//         products = JSON.parse(localStorage.getItem('products'));
-//     }
-//     products.push({'productId' : productId + 1, image : '<imageLink>'});
-//     localStorage.setItem('products', JSON.stringify(products));
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

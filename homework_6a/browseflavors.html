@@ -9,7 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <!-- <script src="script.js"></script> -->
 </head>
-<body>
+<body onload="updateCartOnAllPages()">
 
     <!-- Navigation Bar -->
 	<header>
@@ -36,7 +36,7 @@
                         >
                     </span>
                 </a>
-				<a href="#Cart" class="iconlabels">
+				<a href="cart.html" class="iconlabels">
                     <span>
                         Cart
                         <img 
@@ -53,6 +53,7 @@
     <div class="pagecontent">
 
         <h2 class="pagetitle">Browse Flavors</h2>
+        <span class = "dispClass"></span>
         
         <!-- Row 1 of flavor listings -->
         <div class="row" id="row1">

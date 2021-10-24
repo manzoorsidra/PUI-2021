@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Detail Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="styles.css">
-	<!-- linking stylesheet to get Inter font -->
-	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <!-- <script src="script.js" type="application/javascript"></script> -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- linking stylesheet to get Inter font -->
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> 
 </head>
-<body onload="updateCartOnAllPages()">
+<body>
 
     <!-- Navigation Bar -->
 	<header>
@@ -40,7 +39,7 @@
                 </a>
 				<a href="cart.html" class="iconlabels">
                     <span>
-                        Cart
+                        <b>Cart</b>
                         <img 
                             src="assets/icons/cart.svg" 
                             alt="shopping cart icon. Clicking this will take you to the cart page."
@@ -51,132 +50,107 @@
 		</nav>
 	</header>
 
-    <!-- Page Content -->
+
+
+
+
+
+
+
+
+
+
     <div class="pagecontent">
+
+        <h2 class="pagetitle">Your Cart</h2>
+
         <div class="topsection">
-
-            <!-- Left Column -->
-            <div class = "leftside">
-                <!-- <p id="test">Test</p> -->
-                <div id="back">
-                    <a href="browseflavors.html">
-                        <img 
-                            src="assets/images/backarrow.svg" 
-                            alt="back arrow. Clicking this will take you back to the browse flavors page."
-                        >
-                        <p>Back to Browse</p>
-                    </a>
-                </div>
-
-                <img id="rollimage" src="assets/images/originaldetail.png" alt="original cinnamon roll">
-                <div class="carouselindicators">
-                    <img 
-                        src="assets/images/selecteddot.svg" 
-                        alt="These are carousel indicators that allow you to loop through the product images."
-                    >
-                    <img 
-                        src="assets/images/notselecteddot.svg" 
-                        alt="These are carousel indicators that allow you to loop through the product images."
-                    >
-                    <img 
-                        src="assets/images/notselecteddot.svg" 
-                        alt="These are carousel indicators that allow you to loop through the product images."
-                    >
-                </div>
-                <h5>Ingredients</h5>
-                <h6 id="ingredients">
-                    Enriched wheat flour, Sugar, cocoa butter, 
-                    soy lecithin, vanilla salt, brown sugar, margarine, vegetable oil, 
-                    soybean, water, salt, dry milk, monoglycerides, natural flavoring, 
-                    vitamin A,beta carotene color, butter, eggs, soy flour, baking soda, 
-                    natural vanilla flavor.
-                </h6>
-                <h6 id="contains">This Product Contains</h6>
-                <h6 id="containsingredients">Egg, Milk, Soy and Wheat</h6>
-            </div>
-
-            <!-- Right Column -->
-            <div class="rightside">
-                <div class="detailtitle">
-                    <h2>Original</h2>
-                    <h4>$ 1.99</h4>
-                </div>
-                <div class="detailratings">
-                        <div class="detailstars">
-                            <img src="assets/images/starpink.svg" alt="4 star rating">
-                            <img src="assets/images/starpink.svg" alt="4 star rating">
-                            <img src="assets/images/starpink.svg" alt="4 star rating">
-                            <img src="assets/images/starpink.svg" alt="4 star rating">
-                            <img src="assets/images/stargrey.svg" alt="4 star rating">
-                        </div>
-                        <p>1219 Ratings</p>
-                </div>
-                <p id="details">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Curabitur consectetur id congue enim in id eget ut. Egestas 
-                    ridiculus at ac mauris. Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Curabitur consectetur id congue enim in id eget ut. 
-                    Egestas ridiculus at ac mauris.
-                </p>
-                <div class="glaze">
-                    <p>Glaze</p>
-                    <div class="alloptions">
-                        <div class="goptionrow" id="goptionrow1">
-                            <div class="goptions options defaultoption">No Glaze</div>
-                            <div class="goptions options">Sugar - Milk</div>
-                            <div class="goptions options">Double - Chocolate</div>
-                        </div>
-                        <div class="optionrow">
-                            <div class="goptions options">Vanilla - Milk</div>
+<!-- Items inside the cart -->
+<div class="cartItems">
+<!-- Item 1 -->
+            <div class = "cartItem">
+                <img class = "cartImage" src = "assets/images/originaldetail.png" alt="original cinnamon roll">
+                <div class="cartItemDetails">
+                    <div class = "itemTitle">
+                        <p class = "cartItemName">Original</p>
+                        <div class= "itemIcons">
+                            <img class= "iconlabels" src="assets/icons/favorites.svg" alt="add to favorites">
+                            <img class = "iconlabels" src="assets/icons/delete.svg" alt="delete item">
                         </div>
                     </div>
-                </div>
-                <div class="quantity">
-                    <p>Quantity</p>
-                    <div class="alloptions qoptionrow">
-                        <div class="qoptions options defaultoption">1</div>
-                        <div class="qoptions options">3</div>
-                        <div class="qoptions options">6</div>
-                        <div class="qoptions options">12</div>
+
+                    <h6 class = "itemPrice">$1.99</h6>
+
+                    <div class = "cartItemDropdowns">
+                        <div class = "dropdownSection  firstDropdown">
+                            <p class="dropdownTitle">Quantity</p>
+                            <div class = "dropdown">
+                                <p class ="dropdownText ">3</p>
+                                <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                            </div>
+                        </div>
+                        <div class = "dropdownSection">
+                            <p class="dropdownTitle">Glaze</p>
+                            <div class = "dropdown">
+                                <p class ="dropdownText">No Glaze</p>
+                                <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <button class="primarybutton" id="addtocart">Add to Cart</button>
             </div>
+
+            <!-- Item 2 -->
+            <div class = "cartItem">
+                <img class = "cartImage" src = "assets/images/originaldetail.png" alt="original cinnamon roll">
+                <div class="cartItemDetails">
+                    <div class = "itemTitle">
+                        <p class = "cartItemName">Original</p>
+                        <div class= "itemIcons">
+                            <img class= "iconlabels" src="assets/icons/favorites.svg" alt="add to favorites">
+                            <img class = "iconlabels" src="assets/icons/delete.svg" alt="delete item">
+                        </div>
+                    </div>
+
+                    <h6 class = "itemPrice">$1.99</h6>
+
+                    <div class = "cartItemDropdowns">
+                        <div class = "dropdownSection  firstDropdown">
+                            <p class="dropdownTitle">Quantity</p>
+                            <div class = "dropdown">
+                                <p class ="dropdownText ">3</p>
+                                <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                            </div>
+                        </div>
+                        <div class = "dropdownSection">
+                            <p class="dropdownTitle">Glaze</p>
+                            <div class = "dropdown">
+                                <p class ="dropdownText">No Glaze</p>
+                                <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
         </div>
 
 
-<!-- Test HTML for Radio Buttons (Remove) action="/action_page.php"-->
-<!-- SHOPPING CART COUNTER FOR ITEMS -->
-<span id = "disp" class = "dispClass"></span>
-        <form>
-            <p>Glaze</p>
-            <input type="radio" id="noGlaze" name="glaze_flavor" value="NoGlaze" checked="checked">
-            <label class ="glazeLabel" for="noGlaze">No Glaze</label>
-            <input type="radio" id="vanillaMilk" name="glaze_flavor" value="VanillaMilk">
-            <label class ="glazeLabel" for="vanillaMilk">Vanilla - Milk</label>
-            <input type="radio" id="sugarMilk" name="glaze_flavor" value="SugarMilk">
-            <label class ="glazeLabel" for="sugarMilk">Sugar - Milk</label>
-            <input type="radio" id="doubleChocolate" name="glaze_flavor" value="DoubleChocolate">
-            <label class ="glazeLabel" for="doubleChocolate">Double - Chocolate</label>
-          
-            <br>  
-          
-            <p>Quantity</p>
-            <input type="radio" id="qty1" name="quantity" value="1" checked="checked">
-            <label for="qty1">1</label>
-            <input type="radio" id="qty2" name="quantity" value="3">
-            <label for="qty2">3</label> 
-            <input type="radio" id="qty3" name="quantity" value="6">
-            <label for="qty3">6</label>
-            <input type="radio" id="qty4" name="quantity" value="12">
-            <label for="qty4">12</label>
-            <br>
-            <button id ="addToCartBtn" type="button">
-                Add to Cart
-            </button>
-          </form>
+            <!-- Order Summary Section -->
+            <!-- <div class ="orderSummary">
+                <h4>Order Summary</h4>
 
-<!-- Test HTML for Radio Buttons (Remove) -->
+                <div class="itemListing">
+                    <div class="itemNamexQty">
+                    
+                    </div>
+                </div>
+
+            </div> -->
+
+        </div>
+
 
         <!-- Bottom Section -->
         <div id="bottomsection">
@@ -260,7 +234,12 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
+
+
+
+
+
 
     <!-- Footer -->
     <footer>
@@ -292,7 +271,6 @@
 			</div>
         </div>
     </footer>
-    <script src="script.js" async></script>
-    
+    <script src="script.js" async></script> 
 </body>
 </html>
