@@ -5,6 +5,8 @@ var items = [];
 var cartBtnAvailable = document.getElementById('addToCartBtn');
 if(cartBtnAvailable){
   cartBtnAvailable.addEventListener('click', function(){
+
+//------------For 6B - Capturing radio button form selections-----------------------
 //     const rbs = document.querySelectorAll('input[name="glaze_flavor"]');
 //     const rbs2 = document.querySelectorAll('input[name="quantity"]');
 
@@ -25,6 +27,7 @@ if(cartBtnAvailable){
 //     var item = [selectedValue1, selectedValue2];
 //     items.push(item);
 //     console.log(items);
+//------------For 6B - Capturing radio button form selections-----------------------
 
 
 // Local Storage Cart Items Counter
@@ -38,7 +41,6 @@ if(cartBtnAvailable){
     var updatedCounter = currentCounterValue + 1;
     localStorage.setItem("cartItemNumber", JSON.stringify(updatedCounter));
 
-    // console.log(typeof(localStorage.getItem('cartItemNumber')) + localStorage.getItem('cartItemNumber'));
     document.getElementById("cartCounter").innerHTML = JSON.parse(localStorage.getItem('cartItemNumber'));
 
     
@@ -53,7 +55,6 @@ function updateCartOnAllPages(){
     }
 
     var cartCountLS = JSON.parse(JSON.stringify(localStorage.getItem('cartItemNumber')));
-    // console.log("cartCount = " + typeof(cartCount) + cartCount);
 
     if(document.getElementById("cartCounter2")){
         var cartCount2 = document.getElementById("cartCounter2");
@@ -67,31 +68,29 @@ function updateCartOnAllPages(){
         var cartCount4 = document.getElementById("cartCounter4");
         cartCount4.innerHTML = cartCountLS;
     }
-    // console.log(cartItemNumber.innerHTML);
 };
 
 
 
-//Based on which option is selected change image
+//Based on which option is clicked change image + selected option
 document.body.addEventListener('change', function(e){
   let target = e.target;
   let message;
   switch (target.id) {
       case 'vanillaMilk':
-        //Add image src attributes here to change images based on selection
-          document.getElementById("rollimage").src = "assets/images/walnut.png";
+          document.getElementById("rollimage").src = "assets/images/originaldetail.png";
           message = 'vanillaMilk';
           break;
       case 'sugarMilk':
-          document.getElementById("rollimage").src = "assets/images/originaldetail.png";
+          document.getElementById("rollimage").src = "assets/images/walnut.png";
           message = 'sugarMilk';
           break;
       case 'doubleChocolate':
-          document.getElementById("rollimage").src = "assets/images/pumpkinspice.png";
+          document.getElementById("rollimage").src = "assets/images/blackberry.png";
           message = 'doubleChocolate';
           break;
       case 'noGlaze':
-          document.getElementById("rollimage").src = "assets/images/caramelpecan.png";
+          document.getElementById("rollimage").src = "assets/images/noglaze.jpeg";
           message = 'noGlaze';
           break;
   }

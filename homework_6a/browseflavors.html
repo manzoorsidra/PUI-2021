@@ -36,15 +36,21 @@
                         >
                     </span>
                 </a>
-				<a href="cart.html" class="iconlabels">
-                    <span>
-                        Cart
-                        <img 
-                            src="assets/icons/cart.svg" 
-                            alt="shopping cart icon. Clicking this will take you to the cart page."
-                        >
-                    </span>
-                </a>
+				<a href="cart.html" class="iconlabels cartIconElement">
+					<span>
+						Cart 
+					</span>
+						<div class = "cartIcon">
+							<img 
+								src="assets/icons/cart.svg" 
+								alt="shopping cart icon. Clicking this will 
+								take you to the cart page."
+							>
+							<div class = "cartNumberDiv">
+								<span class ="disp" id = "cartCounter2">0</span>
+							</div>
+						</div>
+				</a>
 			</div>
 		</nav>
 	</header>
@@ -53,7 +59,6 @@
     <div class="pagecontent">
 
         <h2 class="pagetitle">Browse Flavors</h2>
-        <span id = "cartCounter2"></span>
         
         <!-- Row 1 of flavor listings -->
         <div class="row" id="row1">
