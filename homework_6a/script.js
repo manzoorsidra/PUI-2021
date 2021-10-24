@@ -38,28 +38,36 @@ if(cartBtnAvailable){
     var updatedCounter = currentCounterValue + 1;
     localStorage.setItem("cartItemNumber", JSON.stringify(updatedCounter));
 
-    console.log(typeof(localStorage.getItem('cartItemNumber')) + localStorage.getItem('cartItemNumber'));
+    // console.log(typeof(localStorage.getItem('cartItemNumber')) + localStorage.getItem('cartItemNumber'));
+    document.getElementById("cartCounter").innerHTML = JSON.parse(localStorage.getItem('cartItemNumber'));
 
     
   });
 };
 
 
-
 function updateCartOnAllPages(){
 
-    if(document.getElementById("disp")){
-        document.getElementById("disp").innerHTML = JSON.parse(localStorage.getItem('cartItemNumber'));
+    if(document.getElementById("cartCounter")){
+        document.getElementById("cartCounter").innerHTML = JSON.parse(localStorage.getItem('cartItemNumber'));
     }
 
-    var cartCount = JSON.parse(localStorage.getItem('cartItemNumber'));
-    console.log("cartCount = " + cartCount);
+    var cartCountLS = JSON.parse(JSON.stringify(localStorage.getItem('cartItemNumber')));
+    // console.log("cartCount = " + typeof(cartCount) + cartCount);
 
-    var cartItemNumber = document.getElementsByClassName("dispClass");
-    console.log(cartItemNumber);
-
-    cartItemNumber.innerHTML = cartCount;
-    console.log(cartItemNumber.innerHTML);
+    if(document.getElementById("cartCounter2")){
+        var cartCount2 = document.getElementById("cartCounter2");
+        cartCount2.innerHTML = cartCountLS;
+    }
+    if(document.getElementById("cartCounter3")){
+        var cartCount4 = document.getElementById("cartCounter3");
+        cartCount3.innerHTML = cartCountLS;
+    }
+    if(document.getElementById("cartCounter4")){
+        var cartCount4 = document.getElementById("cartCounter4");
+        cartCount4.innerHTML = cartCountLS;
+    }
+    // console.log(cartItemNumber.innerHTML);
 };
 
 
@@ -89,6 +97,9 @@ document.body.addEventListener('change', function(e){
   }
   console.log(message);
 });
+
+
+window.onload = updateCartOnAllPages();
 
 
 
