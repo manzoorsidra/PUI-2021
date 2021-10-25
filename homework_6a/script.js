@@ -2,6 +2,7 @@
 var myId;
 var items = [];
 
+// Get click event of add to cart button
 var cartBtnAvailable = document.getElementById('addToCartBtn');
 if(cartBtnAvailable){
   cartBtnAvailable.addEventListener('click', function(){
@@ -47,7 +48,7 @@ if(cartBtnAvailable){
   });
 };
 
-
+// Update cart items counter on all pages with the cart link
 function updateCartOnAllPages(){
 
     if(document.getElementById("cartCounter")){
@@ -72,7 +73,7 @@ function updateCartOnAllPages(){
 
 
 
-//Based on which option is clicked change image + selected option
+//Based on which option is clicked (on the flavor detail page) change image + have visual indication of the selected option
 document.body.addEventListener('change', function(e){
   let target = e.target;
   let message;
@@ -97,7 +98,7 @@ document.body.addEventListener('change', function(e){
   console.log(message);
 });
 
-
+// update cart counter everytime a page is refreshed
 window.onload = updateCartOnAllPages();
 
 
